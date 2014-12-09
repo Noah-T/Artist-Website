@@ -70,16 +70,31 @@ h2 {
 	}
 }
 
-#imageGallery {
+#coverflow {
 	background-color: black;
 	overflow: hidden;
+	position: static;
 }
 
+.myWrapper {
+	width: 680px;
+	margin: 0 auto;
+}
+
+
+
 @media screen and (max-width: 500px){
-	img {
+	/*img {
 		display: block;
 		margin: 0 auto;
 		float: none;
-	}
+	}*/
+
+	.myWrapper {
+	width: 350px;
+	margin: 0 auto;
+}
+
+	
 }
 
