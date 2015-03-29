@@ -7,6 +7,7 @@
 		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="coverflow.css">
 		<script src="jquery-2.1.1.min.js"></script>
+		// <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.js"></script> -->
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 		<meta name = "viewport" content = "user-scalable=no, width=device-width" charset="UTF-8">
 	</head>
@@ -35,34 +36,31 @@
 			</div>
 			
 		</div>
-
-		<div class="myWrapper">
-			<div class="col-md-12">
-				<div id="coverflow">	
-					<li><img src="images/img1.jpg"></li>
-					<li><img src="images/img2.jpg"></li>
-					<li><img src="images/img3.jpg"></li>
-					<li><img src="images/img4.jpg"></li>
-					<li><img src="images/img5.jpg"></li>
-					<li><img src="images/img6.jpg"></li>
-					<li><img src="images/img7.jpg"></li>	
-	
-				</div>	
-			</div>
-		</div>		
-
+		<div class="coverflow">	
+			<img class="cover" src="images/img1.jpg">
+			<img class="cover" src="images/img2.jpg">
+			<img class="cover" src="images/img3.jpg">
+			<img class="cover" src="images/img4.jpg">
+			<img class="cover" src="images/img5.jpg">
+			<img class="cover" src="images/img6.jpg">
+			<img class="cover" src="images/img7.jpg">	
+		</div>	
 		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.js"></script>
 
-		
+		<!-- Optional: Reflection -->
+		<script type="text/javascript" src="javascript/reflection.js"></script>
 
-		<script src="coverflow.min.js"></script>
-			<script>
-    $(function() {
-		// and kick off
-        $('#coverflow').coverflow();
-    });
-</script>
-		
+		<!-- Mousewheel -->
+		<script src="javascript/jquery.mousewheel.js"></script>
+
+		<!-- interpolate, depends on jQ 1.8.0+ -->
+		<script src="javascript/jquery.interpolate.js"></script>
+
+		<!-- Coverflow -->
+		<script src="javascript/jquery.coverflow.js"></script>
+		<script src="javascript/custom-coverflow.js"></script>
 
 	</body>
 
